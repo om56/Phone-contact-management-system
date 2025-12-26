@@ -1,35 +1,28 @@
-# 📒 Contact Book Management System (C++)
+# Contact Book Management System (C++)
 
 A simple **menu-driven Contact Book application** developed using **C++**.  
-This project allows users to store and manage contact details such as name, phone number, and email ID with **file-based data persistence**.
+It allows users to add, view, search, update, and delete contacts with **file-based storage**.
 
----
-
-## 🔹 Features
-- Add new contacts
-- View all saved contacts
+## Features
+- Add new contact
+- View all contacts
 - Search contact by name
 - Update contact details
-- Delete contacts
-- Data stored permanently using file handling
+- Delete contact
+- Data saved using file handling (`Contacts.txt`)
 
----
-
-## 🔹 Technologies Used
+## Technologies Used
 - C++
-- Object Oriented Programming (OOP)
+- OOP (Classes & Objects)
 - STL (`vector`)
 - File Handling (`fstream`)
-- Console-based UI
 
----
+## How It Works
+- Contacts are stored in a vector during runtime
+- Data is read from file at program start
+- Updated data is written back to file on exit
 
-## 🔹 How It Works
-- Contacts are stored in memory using a `vector`
-- Data is saved in a text file (`Contacts.txt`)
-- On program start, data is loaded from the file
-- On exit, updated data is written back to the file
-
----
-
-## 🔹 Project Structure
+## How to Run
+```bash
+g++ main.cpp -o app
+./app
